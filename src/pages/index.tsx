@@ -2,41 +2,16 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+
 const Home: NextPage = () => {
   return (
     <>
       <Head>
         <title>News Homepage</title>
       </Head>
-      <header>
-        <div>
-          <a href="#">
-            <svg className="icon">
-              <use xlinkHref="/images/logo.svg#logo"></use>
-            </svg>
-          </a>
-          <button>Menu</button>
-          <nav>
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">New</a>
-              </li>
-              <li>
-                <a href="#">Popular</a>
-              </li>
-              <li>
-                <a href="#">Trending</a>
-              </li>
-              <li>
-                <a href="#">Categories</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <Header />
       <main>
         <div>
           <section id="hero">
@@ -149,17 +124,7 @@ const Home: NextPage = () => {
           </ul>
         </section>
       </main>
-      <footer className="attribution">
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by <a href="https://www.abizmo.dev">Abián Izquierdo</a>.
-      </footer>
+      <Footer />
     </>
   );
 };
