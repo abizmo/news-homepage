@@ -42,7 +42,9 @@ const Header: NextComponentType = () => {
           </svg>
         </a>
         <button
-          className="fixed top-7 right-4 z-50 flex h-8 w-10 items-center justify-center lg:hidden"
+          className={`${
+            isOpen ? "fixed " : "absolute "
+          }top-7 right-4 z-50 flex h-8 w-10 items-center justify-center lg:hidden`}
           aria-controls="primary-navigation"
           aria-expanded={isOpen}
           onClick={() => setIsOpen((prev) => !prev)}
