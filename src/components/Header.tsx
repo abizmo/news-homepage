@@ -78,7 +78,11 @@ const Header: NextComponentType = () => {
             isOpen ? "translate-x-0 " : "translate-x-64 "
           }fixed inset-y-0 right-0 z-40 w-64 bg-off-white transition-transform duration-300 ease-in-out lg:relative lg:w-auto lg:translate-x-0`}
         >
-          <ul className="pt-36 lg:flex lg:items-center lg:gap-2 lg:pt-0">
+          <ul
+            aria-label="Primary"
+            role="list"
+            className="pt-36 lg:flex lg:items-center lg:gap-2 lg:pt-0"
+          >
             {navlinks.map(({ href, label }) => (
               <li className="mb-5 px-6 last:mb-0 lg:mb-0 lg:px-4" key={label}>
                 <a
