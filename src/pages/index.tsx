@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                   the power of the platforms back into the hands of the people.
                   But is it really fulfilling its promise?
                 </p>
-                <button className="bg-soft-red px-8 py-4 text-sm font-bold uppercase text-off-white">
+                <button className="bg-soft-red px-8 py-4 text-sm font-bold uppercase text-off-white hover:bg-very-dark-blue">
                   Read more
                 </button>
               </div>
