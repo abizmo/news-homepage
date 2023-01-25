@@ -4,26 +4,7 @@ import Image from "next/image";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-
-const news = [
-  {
-    url: "#",
-    title: "Hydrogen VS Electric Cars",
-    description: "Will hydrogen-fueled cars ever catch up to EVs?",
-  },
-  {
-    url: "#",
-    title: "The Downsides of AI Artistry",
-    description:
-      "What are the possible adverse effects of on-demand AI image generation?",
-  },
-  {
-    url: "#",
-    title: "Is VC Funding Drying Up?",
-    description:
-      "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
-  },
-];
+import NewsList from "../components/NewsList";
 
 const Home: NextPage = () => {
   return (
@@ -65,19 +46,7 @@ const Home: NextPage = () => {
             <h2 className="mb-2 text-3xl font-bold text-soft-orange lg:text-4xl">
               New
             </h2>
-            <ul>
-              {news.map(({ url, title, description }) => (
-                <li
-                  key={title}
-                  className="border-dark-grayish-blue py-7 last:pb-0 [&:not(:last-child)]:border-b"
-                >
-                  <h3 className="mb-2 text-2xl font-bold text-off-white lg:mb-3">
-                    <a href={url}>{title}</a>
-                  </h3>
-                  <p>{description}</p>
-                </li>
-              ))}
-            </ul>
+            <NewsList />
           </section>
         </div>
         <section>
