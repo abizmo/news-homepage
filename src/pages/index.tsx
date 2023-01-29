@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <main className="container mx-auto px-4 lg:px-0">
         <section
           id="hero"
-          className="grid gap-6 lg:grid-cols-3 lg:gap-x-7 lg:gap-y-8"
+          className="mb-16 grid gap-6 lg:mb-[72px] lg:grid-cols-3 lg:gap-x-7 lg:gap-y-8"
         >
           <picture className="lg:col-span-2">
             <source
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           <h1 className="max-w-xs text-4xl font-black text-very-dark-blue lg:text-5xl">
             The Bright Future of Web 3.0?
           </h1>
-          <div>
+          <div className="mb-10 lg:mb-0">
             <p className="mb-6 max-w-xs lg:mb-9">
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
