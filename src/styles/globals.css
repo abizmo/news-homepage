@@ -5,3 +5,7 @@
 body {
   @apply bg-off-white text-base text-dark-grayish-blue;
 }
+
+.primary-link {
+  @apply text-very-dark-blue hover:text-soft-red;
+}
