@@ -1,10 +1,10 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import NewsList from "../components/NewsList";
+import NewsWithImageList from "../components/NewsWithImageList";
 
 const Home: NextPage = () => {
   return (
@@ -50,59 +50,7 @@ const Home: NextPage = () => {
           </section>
         </section>
         <section>
-          <ul>
-            <li>
-              <div>
-                <Image
-                  src="/images/image-retro-pcs.jpg"
-                  alt="small computer"
-                  width={100}
-                  height={128}
-                />
-                <div>
-                  <h2>01</h2>
-                  <a href="#">
-                    <h3>Reviving Retro PCs</h3>
-                  </a>
-                  <p>What happens when old PCs are given modern upgrades?</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <Image
-                  src="/images/image-top-laptops.jpg"
-                  alt="laptop keys"
-                  width={100}
-                  height={128}
-                />
-                <div>
-                  <h2>02</h2>
-                  <a href="#">
-                    <h3>Top 10 Laptops of 2022</h3>
-                  </a>
-                  <p>Our best picks for various needs and budgets.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <Image
-                  src="/images/image-gaming-growth.jpg"
-                  alt="dualshock"
-                  width={100}
-                  height={128}
-                />
-                <div>
-                  <h2>03</h2>
-                  <a href="#">
-                    <h3>The Growth of Gaming</h3>
-                  </a>
-                  <p>How the pandemic has sparked fresh opportunities.</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <NewsWithImageList />
         </section>
       </main>
       <Footer />
