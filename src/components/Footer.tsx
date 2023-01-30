@@ -4,7 +4,7 @@ const Footer: NextComponentType = () => (
   <footer className="mt-12 mb-8 text-center text-xs">
     Challenge by{" "}
     <a
-      className="font-bold text-soft-red"
+      className="primary-link font-bold"
       href="https://www.frontendmentor.io?ref=challenge"
       target="_blank"
       rel="noopener noreferrer"
@@ -12,7 +12,7 @@ const Footer: NextComponentType = () => (
       Frontend Mentor
     </a>
     . Coded by{" "}
-    <a className="font-bold text-soft-red" href="https://www.abizmo.dev">
+    <a className="primary-link font-bold" href="https://www.abizmo.dev">
       Abián Izquierdo
     </a>
     .

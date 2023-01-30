@@ -86,7 +86,7 @@ const Header: NextComponentType = () => {
             {navlinks.map(({ href, label }) => (
               <li className="mb-5 px-6 last:mb-0 lg:mb-0 lg:px-4" key={label}>
                 <a
-                  className="inline-block w-full py-2 text-xl text-very-dark-blue lg:text-lg lg:hover:text-soft-red"
+                  className="primary-link inline-block w-full py-2 text-xl lg:text-lg"
                   href={href}
                   onClick={() => setIsOpen(false)}
                 >
