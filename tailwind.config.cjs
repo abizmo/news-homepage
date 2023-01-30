@@ -14,7 +14,7 @@ module.exports = {
       "very-dark-blue": "hsl(240, 100%, 5%)",
     },
     fontFamily: {
-      sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
     },
     fontSize: {
       xs: [".6875rem", "1.5"],
