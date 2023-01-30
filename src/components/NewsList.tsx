@@ -1,6 +1,6 @@
 interface NewsListProps {
   title: string;
-  news: any[];
+  news: News[];
 }
 
 const NewsList: React.FC<NewsListProps> = ({ title, news }) => (
