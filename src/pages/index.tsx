@@ -55,7 +55,7 @@ const Home: NextPage = () => {
           </section>
         </section>
         <section>
-          <NewsWithImageList />
+          <NewsWithImageList news={news.withImage as NewsWithImage[]} />
         </section>
       </main>
       <Footer />
