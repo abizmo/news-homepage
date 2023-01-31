@@ -9,9 +9,9 @@ const NewsList: React.FC<NewsListProps> = ({ title, news }) => (
       {title}
     </h2>
     <ul>
-      {news.map(({ url, title, description }) => (
+      {news.map(({ id, url, title, description }) => (
         <li
-          key={title}
+          key={id}
           className="border-dark-grayish-blue py-7 last:pb-0 [&:not(:last-child)]:border-b"
         >
           <h3 className="mb-2 text-2xl font-bold text-off-white hover:text-soft-orange lg:mb-3">
