@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import NewsList from "../components/NewsList";
 import NewsWithImageList from "../components/NewsWithImageList";
+import news from "../assets/news.json";
 
 const Home: NextPage = () => {
   return (
@@ -48,16 +49,13 @@ const Home: NextPage = () => {
           </div>
           <section
             id="New"
-            className="bg-very-dark-blue px-5 py-6 lg:col-start-3 lg:row-span-2 lg:row-start-1 lg:px-6 lg:py-8"
+            className="lg:col-start-3 lg:row-span-2 lg:row-start-1"
           >
-            <h2 className="mb-2 text-3xl font-bold text-soft-orange lg:text-4xl">
-              New
-            </h2>
-            <NewsList />
+            <NewsList title="New" news={news.new} />
           </section>
         </section>
         <section>
-          <NewsWithImageList />
+          <NewsWithImageList news={news.withImage as NewsWithImage[]} />
         </section>
       </main>
       <Footer />

@@ -1,39 +1,27 @@
-import type { NextComponentType } from "next";
+interface NewsListProps {
+  title: string;
+  news: News[];
+}
 
-const news = [
-  {
-    url: "#",
-    title: "Hydrogen VS Electric Cars",
-    description: "Will hydrogen-fueled cars ever catch up to EVs?",
-  },
-  {
-    url: "#",
-    title: "The Downsides of AI Artistry",
-    description:
-      "What are the possible adverse effects of on-demand AI image generation?",
-  },
-  {
-    url: "#",
-    title: "Is VC Funding Drying Up?",
-    description:
-      "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
-  },
-];
-
-const NewsList: NextComponentType = () => (
-  <ul>
-    {news.map(({ url, title, description }) => (
-      <li
-        key={title}
-        className="border-dark-grayish-blue py-7 last:pb-0 [&:not(:last-child)]:border-b"
-      >
-        <h3 className="mb-2 text-2xl font-bold text-off-white hover:text-soft-orange lg:mb-3">
-          <a href={url}>{title}</a>
-        </h3>
-        <p>{description}</p>
-      </li>
-    ))}
-  </ul>
+const NewsList: React.FC<NewsListProps> = ({ title, news }) => (
+  <div className="bg-very-dark-blue px-5 py-6 lg:px-6 lg:py-8">
+    <h2 className="mb-2 text-3xl font-bold text-soft-orange lg:text-4xl">
+      {title}
+    </h2>
+    <ul>
+      {news.map(({ id, url, title, description }) => (
+        <li
+          key={id}
+          className="border-dark-grayish-blue py-7 last:pb-0 [&:not(:last-child)]:border-b"
+        >
+          <h3 className="mb-2 text-2xl font-bold text-off-white hover:text-soft-orange lg:mb-3">
+            <a href={url}>{title}</a>
+          </h3>
+          <p>{description}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
 );
 
 export default NewsList;

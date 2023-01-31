@@ -1,0 +1,56 @@
+{
+  "new": [
+    {
+      "id": "01",
+      "url": "#",
+      "title": "Hydrogen VS Electric Cars",
+      "description": "Will hydrogen-fueled cars ever catch up to EVs?"
+    },
+    {
+      "id": "02",
+      "url": "#",
+      "title": "The Downsides of AI Artistry",
+      "description":
+        "What are the possible adverse effects of on-demand AI image generation?"
+    },
+    {
+      "id": "03",
+      "url": "#",
+      "title": "Is VC Funding Drying Up?",
+      "description":
+        "Private funding by VC firms is down 50% YOY. We take a look at what that means."
+    }
+  ],
+  "withImage": [
+    {
+      "id": "01",
+      "image": {
+        "src": "/images/image-retro-pcs.jpg",
+        "alt": "small computer"
+      },
+      "url": "#",
+      "title": "Reviving Retro PCs",
+      "description": "What happens when old PCs are given modern upgrades?"
+    },
+    {
+      "id": "02",
+      "image": {
+        "src": "/images/image-top-laptops.jpg",
+        "alt": "laptop keys"
+      },
+      "url": "#",
+      "title": "Top 10 Laptops of 2022",
+      "description": "Our best picks for various needs and budgets."
+    },
+    {
+      "id": "03",
+      "image": {
+        "src": "/images/image-gaming-growth.jpg",
+        "alt": "dualshock"
+      },
+      "url": "#",
+      "title": "The Growth of Gaming",
+      "description": "How the pandemic has sparked fresh opportunities."
+    }
+  ]
+}
